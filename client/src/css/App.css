@@ -43,7 +43,7 @@ button {
 }
 
 a {
-	color: black;
+	color: #40763f;
 	text-decoration: none;
 }
 
@@ -57,6 +57,8 @@ nav {
 	background-color: #f5f5ef;
 	font-size: 1.8rem;
 	height: 50px;
+	border: 2px solid #40763f;
+	padding: 30px;
 }
 
 .login-signup {
@@ -101,42 +103,71 @@ nav {
 /* ORDER */
 .order {
 	height: 100%;
-	background-color: #f5f5ef;
+	margin-top: 5%;
 }
 
 .order h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
 	padding: 20px 0;
-	margin-left: 30px;
+	text-align: center;
 }
 
 .order h3 {
 	font-size: 1.5rem;
 	margin-left: 60px;
 	color: #40763f;
+	text-align: center;
 }
 
-.order-images {
+.orders-container {
+	display: flex;
+}
+
+.pizzas-container {
 	display: flex;
 	gap: 10rem;
 	width: 70%;
-	margin: 10% auto;
+	margin: 5% auto;
 }
 
 .pizza-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
 }
 
-.pizza-container button {
-	margin-top: 20px;
+.desc-container {
+	margin: 30px 0;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
-.pizza-container h2 {
-	margin-top: 20px;
+.modal-ordered {
+	position: absolute;
+	top: 10%;
+	right: 3%;
+	background-color: rgba(173, 173, 173, 0.568);
+	padding: 20px;
+	font-size: 1.5rem;
+}
+
+.modal-ordered p {
+	margin-top: 10px;
+}
+
+.order-btn {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+.pizza-added-container button {
+	padding: 2px 4px;
+	border: none;
+	margin: 0px 2px;
+	float: right;
 }
 
 /* SIGNUP */
